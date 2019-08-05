@@ -9,9 +9,13 @@ document.getElementById('reset').addEventListener('click', resetGame);
 
 
 //functions
+function render() {
+
+};
+
 function nextRound() {
 new Array(36).fill(null);
-console.log(nextRound);
+
 };
 
 function playerGuess() {

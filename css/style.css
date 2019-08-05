@@ -21,7 +21,7 @@ section {
 div {
     display: flex;
     justify-content: center;
-    border: 1vmin solid maroon;
+    border: 1vh solid maroon;
 }
 
 
