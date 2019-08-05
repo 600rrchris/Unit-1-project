@@ -14,13 +14,14 @@ section {
     display: grid;
     grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: repeat(6, 1fr);justify-content: center;
-    justify-content: center;
-    flex-direction: row;
-    height: 100vh;
     margin: 0 auto; 
-    height: 500px;
-    width: 500px;
+    width: 50vh;
+    height: 50vh; 
 }
-
+div {
+    display: flex;
+    justify-content: center;
+    border: 1vmin solid maroon;
+}
 
 
