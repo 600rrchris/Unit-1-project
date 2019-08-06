@@ -4,6 +4,8 @@ function shuffle(array) {
     array.sort(() => Math.random() - 0.5);
     console.log(array);
  }
+ const winRound = [1, 2, 3, 4, 5, 6];
+ var guessRound =[];
  
 //cached elements
 var board, guess, win
@@ -23,7 +25,9 @@ function init(){
    
 };
 function render() {
-
+if (guessRound === winRound){
+    alert('winner!');
+}
 };
 
 function nextRound() {
@@ -32,15 +36,23 @@ function nextRound() {
     el.innerText = `${order[idx]}`
     });
     boxes.forEach((el, idx) => {
-    el.style.transition = '5s';
-    el.style.opacity = .1;
+    el.style.transition = '10s';
+    el.style.opacity = 0;
     });
 };
 
 function playerGuess(evt) {
-console.log(evt.target);
+    guessRound.push(evt.target.innerText);
+    if (guessRound.length > 6) {
+        boxes.forEach((el, idx) => {
+            el.style.opacity = 1;
+        });
+        return;
+    }
+    console.log(guessRound);
 };
 
 function resetGame() {
+   
 console.log(resetGame);
 };
