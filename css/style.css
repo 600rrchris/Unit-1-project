@@ -17,12 +17,14 @@ main {
 section {
     display: grid;
     grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: repeat(6, 1fr);justify-content: center;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
     margin: 0 auto; 
     width: 50vh;
     height: 50vh;
     font-size: large; 
     font-weight: bold;
+
 }
 
 div {
