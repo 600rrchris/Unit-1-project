@@ -33,7 +33,7 @@ boxes.forEach(el =>{
         el.innerText = `${order[idx]}`
     });
     boxes.forEach((el, idx) => {
-        el.style.transition = '10s';
+        el.style.transition = '5s';
         el.style.opacity = 0;
     });
 };
@@ -45,16 +45,20 @@ function shuffle(array) {
 
 function playerGuess(evt) {
     guessRound.push(evt.target.innerText);
-    if (guessRound.length > 6) {
-        boxes.forEach((el, idx) => {
-            el.style.transition = '1s';
-            el.style.opacity = 1;   
-            el.removeEventListener('click', playerGuess);
-        });
+    evt.target.style.transition = '1s';
+    evt.target.style.opacity = 1;
+    evt.target.style = "color: purple; border: 5px solid blue; border-radius: 25%"
+    //  if (guessRound.length >= 6) {
+        if (guessRound.length === winRound.length) {
+            for(i = 0; i < winRound.length; i++){
+                if(guessRound[i] === winRound[i]) {
+         resetGame();
+                }
+            };
         return;
     }
     console.log(guessRound);
-};
+ };
 
 
     function match() { 
@@ -69,7 +73,7 @@ function playerGuess(evt) {
         };
         winner();
     }
-
+    
     function winner() {
         if (finalArr.every(el => el === true)) {
             alert ('about fucking time')
@@ -84,6 +88,9 @@ function resetGame() {
    guessRound = [];
    boxes.forEach((el, idx) => {
        el.innerHTML = [];
+       el.style.opacity = 1;
+       el.style = "color: ; border:1px solid black"
+       el.removeEventListener('click', playerGuess);    
    })
 };
 

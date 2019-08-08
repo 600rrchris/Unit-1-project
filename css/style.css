@@ -18,7 +18,6 @@ section {
     display: grid;
     grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: repeat(6, 1fr);
-    justify-content: center;
     margin: 0 auto; 
     width: 50vh;
     height: 50vh;
@@ -30,7 +29,29 @@ section {
 div {
     display: flex;
     justify-content: center;
-    border: 5px dashed blue;
+    border: 1px solid black;
 }
 
+button:hover {
+    border-top: 1px solid #96d1f8;
+    background: #82c2ed;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9c56d6), to(#82c2ed));
+    background: -webkit-linear-gradient(top, #9c56d6, #82c2ed);
+    background: -moz-linear-gradient(top, #9c56d6, #82c2ed);
+    background: -ms-linear-gradient(top, #9c56d6, #82c2ed);
+    background: -o-linear-gradient(top, #9c56d6, #82c2ed);
+    padding: 6px 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: #d9ce00;
+    font-size: 18px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
 

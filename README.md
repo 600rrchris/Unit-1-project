@@ -17,3 +17,7 @@ Player should be able to to start game with next round button. Once pressed 6 ra
 ###if match alert winner
 ####if does not match alert try again
 ###click on reset button should empty out box, guess array and base array
+
+80s background theme
+music
+timer down
