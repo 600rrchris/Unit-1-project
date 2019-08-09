@@ -3,7 +3,8 @@
 }
 body {
     text-align: center;
-    background-color: lightgray;
+    background-image: url("/Users/macbookpro/sei/projects/unit-1-project/images/retro-pic.jpg ");
+    background-size: 100%;
 }
 main {
     display: flex;
@@ -12,6 +13,10 @@ main {
     justify-content: center;
     justify-items: center;
     height: 100vh;
+}
+
+h1{
+    color: lightgray;
 }
 
 section {
@@ -23,13 +28,13 @@ section {
     height: 50vh;
     font-size: large; 
     font-weight: bold;
-
 }
 
 div {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    border: 1px solid white;
+    color: white;
 }
 
 button:hover {
@@ -55,3 +60,8 @@ button:hover {
     vertical-align: middle;
 }
 
+#timer {
+    color: red;
+    font-size: 20px;
+    background-color: lightgray;
+}

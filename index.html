@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css"></head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+</head>
 <body>
              <main>
+                 <h1 class="animated slideInDown">Cataga</h1>
               <header>  
                   <button id='round'>
                     Round
                 </button>
-                <button id='check'>Check answer</button>
             </header>           
-                <section id="board">            
+                <section id="board" class="animated pulse">            
                     <div id="r0c0" class="squares"></div>
                     <div id="r0c1" class="squares"></div>
                     <div id="r0c2" class="squares"></div>
@@ -57,9 +59,9 @@
                     <div id="r5c4" class="squares"></div>
                     <div id="r5c5" class="squares"></div>
                  </section>
-                 
+                 <p id="timer"></p>
                  <footer>
-                    <button id="reset">
+                    <button id="reset" class="animated flash">
                         RESET
                     </button>
                     
